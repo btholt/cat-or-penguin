@@ -176,7 +176,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -150%);
+  transform: translate(-50%, -200%);
   transition: transform 0.6s;
 }
 
@@ -187,4 +187,11 @@ body {
 
 .catpaw-extended {
   transform: translate(-50%, -80%);
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
