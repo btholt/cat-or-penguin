@@ -5,9 +5,16 @@ var fs = require('fs');
 require('dotenv').config()
 
 router.get('/', function (req, res, next) {
+
+  var returnVariable = "NoneFound";
+
+  if (process.env.SECRET_KEY) {
+    returnVariable = process.env.SECRET_KEY;
+  }
+
   res.render('index', 
   { 
-    title: process.env.SECRET_KEY,
+    title: returnVariable,
   }
   );
 });
