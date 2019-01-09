@@ -12,9 +12,12 @@ router.get('/', function (req, res, next) {
     returnVariable = process.env.SECRET_KEY;
   }
 
+  var inProduction = process.env.NODE_ENV || 'dev';
+
   res.render('index', 
   { 
     title: returnVariable,
+    production: inProduction 
   }
   );
 });
