@@ -28,7 +28,7 @@ nodemon ./bin/www
 ### Technologies
 NodeJS, Express, Express-Session, Nodemon, hbs - Express.js view engine for handlebars.js
 
-For any extra questions, please contact me at gtsopour@gmail.com. 
+Thank you to the person I forked this from: gtsopour@gmail.com. 
 
 ### Credits
 

@@ -10,7 +10,7 @@ router.get('/', function (req, res, next) {
 
   let inImgPath = "/images/catpaw.png";
 
-  if (myPlatform != "linux") {
+  if (myPlatform == "linux") {
     inImgPath = "/images/penguinflipper.png"
   }
 
