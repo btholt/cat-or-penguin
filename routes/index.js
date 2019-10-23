@@ -8,9 +8,16 @@ router.get('/', function (req, res, next) {
 
   myPlatform = process.platform
 
+  let inImgPath = "/images/catpaw.png";
+
+  if (myPlatform != "linux") {
+    inImgPath = "/images/penguinflipper.png"
+  }
+
   res.render('index', 
   { 
     title: "A Very Useful Website",
+    imgPath: inImgPath
   }
   );
 });

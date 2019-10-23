@@ -171,12 +171,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
+
 .catpaw-container {
   height: 80rem;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -200%);
+  transform: translate(-10%, -200%);
   transition: transform 0.6s;
 }
 
@@ -186,7 +187,18 @@ body {
 }
 
 .catpaw-extended {
-  transform: translate(-50%, -80%);
+  transform: translate(-10%, -80%);
+}
+
+@media (min-height: 800px) {
+
+  .centered {
+    top: 400px;
+  }
+
+  .catpaw-extended {
+    transform: translate(-10%, -650px);
+  }
 }
 
 .preload * {

@@ -29,3 +29,8 @@ nodemon ./bin/www
 NodeJS, Express, Express-Session, Nodemon, hbs - Express.js view engine for handlebars.js
 
 For any extra questions, please contact me at gtsopour@gmail.com. 
+
+### Credits
+
+Image credits:
+[Penguin flipper](https://ejphoto.com/images_FK/FK_KingPenguin40.jpg)

@@ -194,6 +194,14 @@ body {
 .catpaw-extended {
   transform: translate(-10%, -80%);
 }
+@media (min-height: 800px) {
+  .centered {
+    top: 400px;
+  }
+  .catpaw-extended {
+    transform: translate(-10%, -650px);
+  }
+}
 .preload * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
