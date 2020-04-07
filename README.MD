@@ -1,13 +1,12 @@
-# NodeJS Shopping Cart - NodeJS, Express, Express-Session, Express handlebars (hbs)
+<h1 style="text-align: center">cat-or-penguin</h1>
 
 ### Run locally on your machine
-You need to have installed Node and NPM.
 
-![NodeJS Shopping Cart](/data/nodejs-cart-1.png?raw=true "NodeJS Shopping Cart")
+You need to have installed Node and NPM.
 
 Clone this repository
 ``` shell
-git clone https://github.com/gtsopour/nodejs-shopping-cart.git
+git clone https://github.com/btholt/cat-or-penguin.git
 ```
 
 Install dependencies
@@ -25,12 +24,13 @@ For Nodemon usage
 nodemon ./bin/www
 ```
 
-### Technologies
-NodeJS, Express, Express-Session, Nodemon, hbs - Express.js view engine for handlebars.js
+### Environment
 
-Thank you to the person I forked this from: gtsopour@gmail.com. 
+The animal used will be determined by what the `ANIMAL` environment variable is. By default, the animal will be a cat. If `ANIMAL` is set to `penguin`, then a penguin flipper will be used instead.
 
 ### Credits
+
+Thank you to the person I forked this from: gtsopour@gmail.com. 
 
 Image credits:
 [Penguin flipper](https://ejphoto.com/images_FK/FK_KingPenguin40.jpg)

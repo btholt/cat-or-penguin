@@ -4,15 +4,18 @@ var router = express.Router();
 var fs = require('fs');
 require('dotenv').config()
 
+let inImgPath;
+
+if (process.env.ANIMAL === "penguin") {
+  console.log('ANIMAL: penguin');
+  inImgPath = "/images/penguinflipper.png"
+} else {
+  console.log('ANIMAL: cat');
+  inImgPath = "/images/catpaw.png";
+}
+
 router.get('/', function (req, res, next) {
 
-  myPlatform = process.platform
-
-  let inImgPath = "/images/catpaw.png";
-
-  if (myPlatform != "linux") {
-    inImgPath = "/images/penguinflipper.png"
-  }
 
   res.render('index', 
   { 
